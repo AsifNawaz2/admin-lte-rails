@@ -1,24 +1,22 @@
-# README
+# Admin-lte Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+... ** Ruby version ** 3.1.2
 
-* Ruby version
+... ** Rails version ** 7.0.4
 
-* System dependencies
+## Steps followed for project
 
-* Configuration
+### 1. rails new assessment -j esbuild --css bootstrap -d postgresql
+### 2. To make it compatable with admin-lte 3.2
+⋅⋅* yarn remove bootstrap
+⋅⋅* yarn add bootstrap@4.6
 
-* Database creation
+### 3. Add this to app/assets/stylesheets/application.bootstrap.scss
+⋅⋅* @import 'admin-lte/dist/css/adminlte.css'
 
-* Database initialization
+### 4. Add this to app/javascript/application.js
+⋅⋅* import 'admin-lte/dist/js/adminlte.js'
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 5. All good to go
+⋅⋅* run bin/dev
